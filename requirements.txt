@@ -10,6 +10,6 @@ langchain-openai==0.1.9
 chainlit==1.1.304
 python-dotenv==1.0.1
 pypdf==4.2.0
-numpy==1.24.4
+numpy==1.26
 chardet
 SentencePiece
