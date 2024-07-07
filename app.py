@@ -67,23 +67,20 @@ async def on_message(message: cl.Message):
     cb = cl.AsyncLangchainCallbackHandler()
     res = await chain.ainvoke(message.content, callbacks=[cb])
     answer = res["answer"]
-    answer = answer[answer.rfind("Helpful Answer: ") + 16 :]
-    # answer = res["answer"]
-    # source_documents = res["source_documents"]
-    # text_elements = []
+    source_documents = res["source_documents"]
+    text_elements = []
 
-    # if source_documents:
-    #     for source_idx, source_doc in enumerate(source_documents):
-    #         source_name = f"source_{source_idx}"
-    #         text_elements.append(
-    #             cl.Text(content=source_doc.page_content,
-    #                     name=source_name)
-    #         )
-    #     source_names = [text_el.name for text_el in text_elements]
+    if source_documents:
+        for source_idx, source_doc in enumerate(source_documents):
+            source_name = f"source_{source_idx}"
+            text_elements.append(
+                cl.Text(content=source_doc.page_content, name=source_name)
+            )
+        source_names = [text_el.name for text_el in text_elements]
 
-    #     if source_names:
-    #         answer += f"\nSources: {', '.join(source_names)}"
-    #     else:
-    #         answer += "\nNo sources found"
+        if source_names:
+            answer += f"\nSources: {', '.join(source_names)}"
+        else:
+            answer += "\nNo sources found"
 
-    await cl.Message(content=answer).send()
+    await cl.Message(content=answer, elements=text_elements).send()
