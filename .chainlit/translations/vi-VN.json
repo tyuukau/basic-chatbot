@@ -1,0 +1,229 @@
+{
+    "components": {
+        "atoms": {
+            "buttons": {
+                "userButton": {
+                    "menu": {
+                        "settings": "Cài đặt",
+                        "settingsKey": "S",
+                        "APIKeys": "Khóa API",
+                        "logout": "Đăng xuất"
+                    }
+                }
+            }
+        },
+        "molecules": {
+            "newChatButton": {
+                "newChat": "Cuộc trò chuyện mới"
+            },
+            "tasklist": {
+                "TaskList": {
+                    "title": "📒️ Danh sách công việc",
+                    "loading": "Đang tải...",
+                    "error": "Đã xảy ra lỗi"
+                }
+            },
+            "attachments": {
+                "cancelUpload": "Hủy tải lên",
+                "removeAttachment": "Xóa tệp đính kèm"
+            },
+            "newChatDialog": {
+                "createNewChat": "Tạo cuộc trò chuyện mới?",
+                "clearChat": "Điều này sẽ xóa các tin nhắn hiện tại và bắt đầu một cuộc trò chuyện mới.",
+                "cancel": "Hủy",
+                "confirm": "Xác nhận"
+            },
+            "settingsModal": {
+                "settings": "Cài đặt",
+                "expandMessages": "Mở rộng tin nhắn",
+                "hideChainOfThought": "Ẩn chuỗi suy nghĩ",
+                "darkMode": "Chế độ tối"
+            },
+            "detailsButton": {
+                "using": "Đang sử dụng",
+                "used": "Đã sử dụng"
+            },
+            "auth": {
+                "authLogin": {
+                    "title": "Đăng nhập để truy cập ứng dụng.",
+                    "form": {
+                        "email": "Địa chỉ email",
+                        "password": "Mật khẩu",
+                        "noAccount": "Chưa có tài khoản?",
+                        "alreadyHaveAccount": "Đã có tài khoản?",
+                        "signup": "Đăng ký",
+                        "signin": "Đăng nhập",
+                        "or": "HOẶC",
+                        "continue": "Tiếp tục",
+                        "forgotPassword": "Quên mật khẩu?",
+                        "passwordMustContain": "Mật khẩu của bạn phải chứa:",
+                        "emailRequired": "email là trường bắt buộc",
+                        "passwordRequired": "mật khẩu là trường bắt buộc"
+                    },
+                    "error": {
+                        "default": "Không thể đăng nhập.",
+                        "signin": "Hãy thử đăng nhập bằng một tài khoản khác.",
+                        "oauthsignin": "Hãy thử đăng nhập bằng một tài khoản khác.",
+                        "redirect_uri_mismatch": "URI chuyển hướng không khớp với cấu hình ứng dụng oauth.",
+                        "oauthcallbackerror": "Hãy thử đăng nhập bằng một tài khoản khác.",
+                        "oauthcreateaccount": "Hãy thử đăng nhập bằng một tài khoản khác.",
+                        "emailcreateaccount": "Hãy thử đăng nhập bằng một tài khoản khác.",
+                        "callback": "Hãy thử đăng nhập bằng một tài khoản khác.",
+                        "oauthaccountnotlinked": "Để xác nhận danh tính của bạn, hãy đăng nhập bằng cùng một tài khoản mà bạn đã sử dụng ban đầu.",
+                        "emailsignin": "Không thể gửi e-mail.",
+                        "emailverify": "Vui lòng xác minh email của bạn, một email mới đã được gửi.",
+                        "credentialssignin": "Đăng nhập thất bại. Kiểm tra lại thông tin bạn đã cung cấp.",
+                        "sessionrequired": "Vui lòng đăng nhập để truy cập trang này."
+                    }
+                },
+                "authVerifyEmail": {
+                    "almostThere": "Bạn gần như đã hoàn tất! Chúng tôi đã gửi một email đến ",
+                    "verifyEmailLink": "Vui lòng nhấp vào liên kết trong email đó để hoàn tất đăng ký của bạn.",
+                    "didNotReceive": "Không tìm thấy email?",
+                    "resendEmail": "Gửi lại email",
+                    "goBack": "Quay lại",
+                    "emailSent": "Email đã được gửi thành công.",
+                    "verifyEmail": "Xác minh địa chỉ email của bạn"
+                },
+                "providerButton": {
+                    "continue": "Tiếp tục với {{provider}}",
+                    "signup": "Đăng ký với {{provider}}"
+                },
+                "authResetPassword": {
+                    "newPasswordRequired": "Mật khẩu mới là trường bắt buộc",
+                    "passwordsMustMatch": "Mật khẩu phải khớp nhau",
+                    "confirmPasswordRequired": "Xác nhận mật khẩu là trường bắt buộc",
+                    "newPassword": "Mật khẩu mới",
+                    "confirmPassword": "Xác nhận mật khẩu",
+                    "resetPassword": "Đặt lại mật khẩu"
+                },
+                "authForgotPassword": {
+                    "email": "Địa chỉ email",
+                    "emailRequired": "email là trường bắt buộc",
+                    "emailSent": "Vui lòng kiểm tra địa chỉ email {{email}} để nhận hướng dẫn đặt lại mật khẩu của bạn.",
+                    "enterEmail": "Nhập địa chỉ email của bạn và chúng tôi sẽ gửi cho bạn hướng dẫn để đặt lại mật khẩu.",
+                    "resendEmail": "Gửi lại email",
+                    "continue": "Tiếp tục",
+                    "goBack": "Quay lại"
+                }
+            }
+        },
+        "organisms": {
+            "chat": {
+                "history": {
+                    "index": {
+                        "showHistory": "Hiển thị lịch sử",
+                        "lastInputs": "Đầu vào gần đây",
+                        "noInputs": "Trống rỗng...",
+                        "loading": "Đang tải..."
+                    }
+                },
+                "inputBox": {
+                    "input": {
+                        "placeholder": "Nhập tin nhắn của bạn tại đây..."
+                    },
+                    "speechButton": {
+                        "start": "Bắt đầu ghi âm",
+                        "stop": "Dừng ghi âm"
+                    },
+                    "SubmitButton": {
+                        "sendMessage": "Gửi tin nhắn",
+                        "stopTask": "Dừng tác vụ"
+                    },
+                    "UploadButton": {
+                        "attachFiles": "Đính kèm tệp"
+                    },
+                    "waterMark": {
+                        "text": "Được xây dựng bởi"
+                    }
+                },
+                "Messages": {
+                    "index": {
+                        "running": "Đang chạy",
+                        "executedSuccessfully": "thực hiện thành công",
+                        "failed": "thất bại",
+                        "feedbackUpdated": "Phản hồi đã được cập nhật",
+                        "updating": "Đang cập nhật"
+                    }
+                },
+                "dropScreen": {
+                    "dropYourFilesHere": "Thả tệp của bạn vào đây"
+                },
+                "index": {
+                    "failedToUpload": "Tải lên thất bại",
+                    "cancelledUploadOf": "Đã hủy tải lên của",
+                    "couldNotReachServer": "Không thể kết nối đến máy chủ",
+                    "continuingChat": "Tiếp tục cuộc trò chuyện trước đó"
+                },
+                "settings": {
+                    "settingsPanel": "Bảng cài đặt",
+                    "reset": "Đặt lại",
+                    "cancel": "Hủy",
+                    "confirm": "Xác nhận"
+                }
+            },
+            "threadHistory": {
+                "sidebar": {
+                    "filters": {
+                        "FeedbackSelect": {
+                            "feedbackAll": "Phản hồi: Tất cả",
+                            "feedbackPositive": "Phản hồi: Tích cực",
+                            "feedbackNegative": "Phản hồi: Tiêu cực"
+                        },
+                        "SearchBar": {
+                            "search": "Tìm kiếm"
+                        }
+                    },
+                    "DeleteThreadButton": {
+                        "confirmMessage": "Điều này sẽ xóa cuộc trò chuyện cũng như tin nhắn và các phần tử của nó.",
+                        "cancel": "Hủy",
+                        "confirm": "Xác nhận",
+                        "deletingChat": "Đang xóa cuộc trò chuyện",
+                        "chatDeleted": "Đã xóa cuộc trò chuyện"
+                    },
+                    "index": {
+                        "pastChats": "Các cuộc trò chuyện trước đây"
+                    },
+                    "ThreadList": {
+                        "empty": "Trống...",
+                        "today": "Hôm nay",
+                        "yesterday": "Hôm qua",
+                        "previous7days": "7 ngày trước",
+                        "previous30days": "30 ngày trước"
+                    },
+                    "TriggerButton": {
+                        "closeSidebar": "Đóng thanh bên",
+                        "openSidebar": "Mở thanh bên"
+                    }
+                },
+                "Thread": {
+                    "backToChat": "Quay lại cuộc trò chuyện",
+                    "chatCreatedOn": "Cuộc trò chuyện này được tạo vào"
+                }
+            },
+            "header": {
+                "chat": "Trò chuyện",
+                "readme": "Đọc tôi"
+            }
+        }
+    },
+    "hooks": {
+        "useLLMProviders": {
+            "failedToFetchProviders": "Không thể lấy danh sách nhà cung cấp:"
+        }
+    },
+    "pages": {
+        "Design": {},
+        "Env": {
+            "savedSuccessfully": "Đã lưu thành công",
+            "requiredApiKeys": "Khóa API bắt buộc",
+            "requiredApiKeysInfo": "Để sử dụng ứng dụng này, các khóa API sau đây là bắt buộc. Các khóa được lưu trữ trong bộ nhớ cục bộ của thiết bị của bạn."
+        },
+        "Page": {
+            "notPartOfProject": "Bạn không phải là thành viên của dự án này."
+        },
+        "ResumeButton": {
+            "resumeChat": "Tiếp tục trò chuyện"
+        }
+    }
+}
